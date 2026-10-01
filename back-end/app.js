@@ -78,5 +78,19 @@ app.post('/messages/save', async (req, res) => {
   }
 })
 
+app.get('/about', (req, res) => {
+  res.json({
+    name: 'Ben Zaslavsky',
+    imageUrl:
+      'https://media.licdn.com/dms/image/v2/D4E03AQE6wc20p7uCTw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725933862547?e=1792627200&v=beta&t=_UvTjhlxP7q7U3F5y7xYlnumO7Ymj9c_vBp_NTBJUhA',
+    paragraphs: [
+      "Hi, I'm Ben! I'm a third-year college student studying computer science, and this semester I'm taking Agile Software Engineering.",
+      'I enjoy building full-stack web apps, and I like working on projects that turn an idea into something people can actually use. Lately I have been getting more comfortable with React, Express, and MongoDB through exercises like this one.',
+      "Outside of class, I like exploring new tools and technologies, working on side projects, and collaborating with other developers. I'm looking forward to working with my team this semester and shipping something great together.",
+    ],
+    status: 'all good',
+  })
+})
+
 // export the express app we created to make it available to other modules
 module.exports = app // CommonJS export style!
