@@ -1,0 +1,26 @@
+.AboutUs-content {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.AboutUs-content h2 {
+  text-align: center;
+}
+
+.AboutUs-content p {
+  margin: 0 0 1em;
+}
+
+.AboutUs-photo {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 1em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.AboutUs-error {
+  color: red;
+}
